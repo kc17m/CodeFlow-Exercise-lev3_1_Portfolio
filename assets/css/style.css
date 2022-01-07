@@ -1,0 +1,219 @@
+/* Die Vorlage findest du hier: https://www.figma.com/file/L07OQLSoCzQenr7cZ12l01/Portfolio?node-id=0%3A1
+
+Font: Work Sans, Didact Gothic, Fjalla One
+Farben: #9e9e9e, #fff, #000, #333, #666
+Die Bilder befinden sich in der zip-Datei im Classroom!
+Dort befindet sich auch eine Bildschirmaufnahme der Website! */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: Work;
+    src: url(../fonts/Didact_Gothic_Fjalla_One_Work_Sans/Work_Sans/static/WorkSans-Regular.ttf);
+}
+
+@font-face {
+    font-family: Didact;
+    src: url(../fonts/Didact_Gothic_Fjalla_One_Work_Sans/Didact_Gothic/DidactGothic-Regular.ttf);
+}
+
+@font-face {
+    font-family: Fjalla;
+    src: url(../fonts/Didact_Gothic_Fjalla_One_Work_Sans/Fjalla_One/FjallaOne-Regular.ttf);
+}
+
+h1 {
+    font-family: Didact;
+    text-transform: uppercase;
+}
+
+p, h2 {
+    font-family: Work;
+}
+
+p {
+    color: #9e9e9e;
+}
+
+a {
+    font-family: Fjalla;
+    text-decoration: none;
+    color: #fff;
+}
+
+/* header */
+header {
+    text-align: center;
+    height: 200vh;
+    width: 720px;
+    margin: 1% auto;
+}
+
+header p {
+    font-size: 1.25rem;   
+    margin-bottom: 8%; 
+}
+
+header h1 {
+    font-size: 6.25rem;
+    margin-bottom: 10%;
+    line-height: 8rem;    
+}
+
+header img {
+    height: 120vh;
+}
+
+header h2 {
+    font-size: 9rem;
+    font-weight: 200;
+    margin-top: 20%;
+}
+
+/* main */
+
+main section {
+    height: 100vh;   
+}
+/* Achtung! */
+main section span {
+    letter-spacing: -3px;
+}
+
+main h1 {
+    font-size: 6.8rem;
+    margin: 4% 0;
+    font-weight: lighter ;
+}
+
+main section p {
+    margin: 6% 0 7% 0;
+    font-size: 1.25rem;
+}
+
+/* section1 - orbis odd */
+main section:nth-of-type(1) {
+    background: linear-gradient(rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.5)), url(../img/portfolio2.jpg) center/cover;  
+}
+
+main section article {
+   position: relative;
+   margin: 0 0 0 13%;
+   padding: 12% 0 0 0;
+}
+
+main section:nth-of-type(odd) h1 {
+    color: #fff;
+}
+
+main section:nth-of-type(odd) a {
+    color: #fff;
+    font-size: 1rem;
+    border: 2px solid #9E9E9E;
+    padding: 1.6% 2.3%;   
+}
+
+main section:nth-of-type(odd) a:hover  {
+    color:#333;
+    background: #fff;
+    border: 0px;
+    }
+
+main section:not(:last-child) p:nth-of-type(3) {
+    font-size: 10rem;
+    padding: 0;
+    position: absolute;
+    bottom: -58%;
+    right: 10%;
+    font-family: Fjalla;
+    color: #666;  
+}
+
+main section:nth-of-type(odd) a:hover +  p {
+    color: #fff;    
+    }
+
+    /* section2 - rollr even */
+main section:nth-of-type(2) {
+    background: url(../img/portfolio3.png) center/cover;  
+}
+
+main section:nth-of-type(even) h1 {
+    color: #333;
+}
+
+main section:nth-of-type(even) a {
+    color: #333;
+    font-size: 1rem;
+    border: 2px solid #333;
+    padding: 1.6% 2.3%;   
+}
+
+main section:nth-of-type(even) a:hover  {
+    color: #fff;
+    background: #333;
+    border: 0px;
+}
+
+main section:nth-of-type(even) a:hover +  p {
+    color: #333;    
+}
+
+/* section3 galitos */
+
+main section:nth-of-type(3) {
+    background: url(../img/portfolio4.jpg) center/cover;  
+}
+
+/* section4 tretto */
+
+main section:nth-of-type(4) {
+    background: url(../img/portfolio5.png) center/cover;  
+}
+
+/* section5 whats more */
+
+main section:nth-of-type(5) {    
+    background: #000;  
+    color: #fff;
+}
+
+main section:nth-of-type(5) article {
+    width: 67%;
+    margin: 0 auto;
+    padding: 10% 0 0 0;
+}
+
+h2 {
+    font-size: 11.25rem;
+    font-weight: 100;
+    letter-spacing: -12px;
+    margin: 0 0 20% 0;
+}
+
+main section:nth-of-type(5) article div {
+    width: 54%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
