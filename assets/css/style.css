@@ -48,20 +48,23 @@ a {
 /* header */
 header {
     text-align: center;
-    height: 200vh;
+    height: 197vh;
     width: 720px;
     margin: 1% auto;
 }
 
 header p {
     font-size: 1.25rem;   
-    margin-bottom: 8%; 
+    margin-bottom: 8.25%; 
+    color: #000;
 }
 
 header h1 {
     font-size: 6.25rem;
     margin-bottom: 10%;
-    line-height: 8rem;    
+    line-height: 8rem;  
+    letter-spacing: -2%;  
+    font-weight: 200;
 }
 
 header img {
@@ -70,18 +73,19 @@ header img {
 
 header h2 {
     font-size: 9rem;
-    font-weight: 200;
-    margin-top: 20%;
+    font-weight: 100;
+    margin-top: 11%;
+    text-transform: uppercase;
 }
 
 /* main */
 
-main section {
+main section:nth-of-type(odd) {
     height: 100vh;   
 }
-/* Achtung! */
-main section span {
-    letter-spacing: -3px;
+
+main section:nth-of-type(even) {
+    height: 120vh;
 }
 
 main h1 {
@@ -198,8 +202,92 @@ h2 {
 
 main section:nth-of-type(5) article div {
     width: 54%;
+    line-height: 2.25rem;
+    margin: 0 0 0 51%;
 }
 
+main section:nth-of-type(5) article div p {
+    color:#666;
+    letter-spacing: 1px;
+}
+
+main section:nth-of-type(5) article div a {
+    color:#fff;
+    font-size: 3.75rem;
+    letter-spacing: -0.06em;
+    border: none;
+    line-height: 4.5rem;
+    background: none;
+    font-family: Work;
+    
+}
+
+main section:nth-of-type(5) article div a:hover {
+    color:#666;  
+    background: none;  
+    text-decoration: underline;
+}
+
+
+/* footer */
+
+footer {
+    height: 120vh;
+    text-align: center;
+    
+}
+
+footer a {
+    font-family: Didact;
+    font-size: 9rem;
+    font-weight: 200;
+    line-height: 13rem;
+    color:#000;
+}
+
+footer p {
+    margin: 12% 0;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* animation rauskopiert aus https://css-tricks.com/almanac/properties/a/animation/ und https://webcode.tools/generators/css/keyframe-animation - aber ich habe keine Ahnung, was hier passiert und warum das so ist */
+
+.fa-heart {
+    animation: pulse 1s infinite;
+    font-size: 1rem;
+    color: #000;
+}
+
+@keyframes pulse {
+    0% {
+      animation-timing-function: ease-out;
+      transform: scale(1);
+      transform-origin: center center;
+    }
+  
+    10% {
+      animation-timing-function: ease-in;
+      transform: scale(0.91);
+    }
+  
+    17% {
+      animation-timing-function: ease-out;
+      transform: scale(0.98);
+    }
+  
+    33% {
+      animation-timing-function: ease-in;
+      transform: scale(0.87);
+    }
+  
+    45% {
+      animation-timing-function: ease-out;
+      transform: scale(1);
+    }
+  }
 
 
 
