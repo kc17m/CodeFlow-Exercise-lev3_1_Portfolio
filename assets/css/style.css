@@ -63,7 +63,7 @@ header h1 {
     font-size: 6.25rem;
     margin-bottom: 10%;
     line-height: 8rem;  
-    letter-spacing: -2%;  
+    letter-spacing: -0.02em;  
     font-weight: 200;
 }
 
@@ -73,7 +73,6 @@ header img {
 
 header h2 {
     font-size: 9rem;
-    font-weight: 100;
     margin-top: 11%;
     text-transform: uppercase;
 }
@@ -100,10 +99,6 @@ main section p {
     letter-spacing: -0.05em;
 }
 
-main section p:nth-of-type(3n) {
-    margin: 8.5% 0 0 0;
- 
-}
 
 /* section1 - orbis odd */
 main section:nth-of-type(1) {
@@ -115,6 +110,8 @@ main section a {
     text-transform: uppercase;
     display: inline-block; 
     margin: 4.5% 0 0 0 ;
+    font-size: 1rem;
+    padding: 1.1% 2.0%;
 
 }
 
@@ -129,9 +126,7 @@ main section:nth-of-type(odd) h1 {
 }
 
 main section:nth-of-type(odd) a {
-    font-size: 1rem;
     border: 2px solid #9E9E9E;
-    padding: 1.1% 2.0%; 
 }
 
 main section:nth-of-type(odd) a:hover  {
@@ -142,7 +137,6 @@ main section:nth-of-type(odd) a:hover  {
 
 main section:not(:last-child) p:nth-of-type(3) {
     font-size: 10rem;
-    padding: 0;
     position: absolute;
     bottom: -32%;
     right: 10%;
@@ -168,22 +162,16 @@ main section:nth-of-type(even) h1 {
 
 main section:nth-of-type(even) article {
     padding: 21% 0 0 0;
-
 }
 
 main section:nth-of-type(even) p:nth-of-type(3) {
-    padding: 0;
-    bottom: -29%;
-    right: 10%;
     color: #666;  
     opacity: 1;
 }
 
 main section:nth-of-type(even) a {
     color: #333;
-    font-size: 1rem;
     border: 2px solid #333;
-    padding: 1.1% 2.0%;   
 }
 
 main section:nth-of-type(even) a:hover  {
@@ -192,7 +180,7 @@ main section:nth-of-type(even) a:hover  {
     border: 0px;
 }
 
-main section:nth-of-type(even) a:hover +  p {
+main section:nth-of-type(even) a:hover + p {
     color: #333;    
 }
 
@@ -225,19 +213,19 @@ main section:nth-of-type(5) article {
 h2 {
     font-size: 11.25rem;
     font-weight: 100;
-    letter-spacing: -12px;
+    letter-spacing: -0.1em;
     margin: 0 0 25% 0;
 }
 
 main section:nth-of-type(5) article div {
-    width: 73%;
+    width: 68%;
     line-height: 2.25rem;
     margin: 0 0 0 44%;
 }
 
 main section:nth-of-type(5) article div p {
     color:#666;
-    letter-spacing: 1px;
+    letter-spacing: 0.01em;
 }
 
 main section:nth-of-type(5) article div a {
@@ -295,28 +283,28 @@ footer a:hover {
       animation-timing-function: ease-out;
       transform: scale(1);
       transform-origin: center center;
-    }
+}
   
     10% {
       animation-timing-function: ease-in;
       transform: scale(0.91);
-    }
+}
   
     17% {
       animation-timing-function: ease-out;
       transform: scale(0.98);
-    }
+}
   
     33% {
       animation-timing-function: ease-in;
       transform: scale(0.87);
-    }
+}
   
     45% {
       animation-timing-function: ease-out;
       transform: scale(1);
-    }
-  }
+}
+}  
 
 
 
