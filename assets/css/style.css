@@ -97,6 +97,7 @@ main h1 {
 main section p {
     margin: 4% 0 2% 0;
     font-size: 1.25rem;
+    letter-spacing: -0.05em;
 }
 
 main section p:nth-of-type(3n) {
@@ -104,12 +105,10 @@ main section p:nth-of-type(3n) {
  
 }
 
-
-
 /* section1 - orbis odd */
 main section:nth-of-type(1) {
     background: linear-gradient(rgba(0, 0, 0, 0.5),
-    rgba(0, 0, 0, 0.5)), url(../img/portfolio2.jpg) center/cover;  
+    rgba(0, 0, 0, 0.5)), url(../img/portfolio2.jpg) no-repeat 78% 613%/102% 101%;  
 }
 
 main section a {
@@ -121,8 +120,8 @@ main section a {
 
 main section article {
    position: relative;
-   margin: 0 0 0 13%;
-   padding: 12% 0 0 0;
+   margin: 0 0 0 12%;
+   padding: 7% 0 0 0;
 }
 
 main section:nth-of-type(odd) h1 {
@@ -132,47 +131,59 @@ main section:nth-of-type(odd) h1 {
 main section:nth-of-type(odd) a {
     font-size: 1rem;
     border: 2px solid #9E9E9E;
-    padding: 1.6% 2.3%; 
-    
-    
-    
+    padding: 1.1% 2.0%; 
 }
 
 main section:nth-of-type(odd) a:hover  {
     color:#333;
     background: #fff;
     border: 0px;
-    }
+}
 
 main section:not(:last-child) p:nth-of-type(3) {
     font-size: 10rem;
     padding: 0;
     position: absolute;
-    bottom: -34%;
+    bottom: -32%;
     right: 10%;
     font-family: Fjalla;
-    color: #666;  
+    color: #9E9E9E;  
     letter-spacing: -0.02em;
+    opacity: 0.2;
 }
-/* hier weitermachen!!! */
+
 main section:nth-of-type(odd) a:hover + p {
-    color: #fff;    
-    }
+    color: #fff;  
+    opacity: 1;  
+}
 
     /* section2 - rollr even */
 main section:nth-of-type(2) {
-    background: url(../img/portfolio3.png) center/cover;  
+    background: url(../img/portfolio3.png) no-repeat 58% 12%/131% 113%;  
 }
 
 main section:nth-of-type(even) h1 {
     color: #333;
 }
 
+main section:nth-of-type(even) article {
+    padding: 21% 0 0 0;
+
+}
+
+main section:nth-of-type(even) p:nth-of-type(3) {
+    padding: 0;
+    bottom: -29%;
+    right: 10%;
+    color: #666;  
+    opacity: 1;
+}
+
 main section:nth-of-type(even) a {
     color: #333;
     font-size: 1rem;
     border: 2px solid #333;
-    padding: 1.6% 2.3%;   
+    padding: 1.1% 2.0%;   
 }
 
 main section:nth-of-type(even) a:hover  {
@@ -188,13 +199,14 @@ main section:nth-of-type(even) a:hover +  p {
 /* section3 galitos */
 
 main section:nth-of-type(3) {
-    background: url(../img/portfolio4.jpg) center/cover;  
-}
+    background:  url(../img/portfolio4.jpg) no-repeat 111% 145%/104% 108%;  
+    background-blend-mode: darken;
+ }
 
 /* section4 tretto */
 
 main section:nth-of-type(4) {
-    background: url(../img/portfolio5.png) center/cover;  
+    background: url(../img/portfolio5.png) 58% 12%/131% 113%;  
 }
 
 /* section5 whats more */
@@ -205,7 +217,7 @@ main section:nth-of-type(5) {
 }
 
 main section:nth-of-type(5) article {
-    width: 67%;
+    width: 70%;
     margin: 0 auto;
     padding: 10% 0 0 0;
 }
@@ -214,13 +226,13 @@ h2 {
     font-size: 11.25rem;
     font-weight: 100;
     letter-spacing: -12px;
-    margin: 0 0 20% 0;
+    margin: 0 0 25% 0;
 }
 
 main section:nth-of-type(5) article div {
-    width: 54%;
+    width: 73%;
     line-height: 2.25rem;
-    margin: 0 0 0 51%;
+    margin: 0 0 0 44%;
 }
 
 main section:nth-of-type(5) article div p {
