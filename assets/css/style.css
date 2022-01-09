@@ -41,7 +41,6 @@ a {
 /* header */
 header {
     text-align: center;
-    height: 197vh;
     width: 720px;
     margin: 1% auto;
     
@@ -55,9 +54,9 @@ header p {
 
 header h1 {
     font-size: 6.25rem;
-    margin-bottom: 14%;
+    margin-bottom: 16%;
     line-height: 8rem;  
-    letter-spacing: -0.02em;  
+    letter-spacing: -2%;  
     font-weight: 200;
 }
 
