@@ -1,10 +1,3 @@
-/* Die Vorlage findest du hier: https://www.figma.com/file/L07OQLSoCzQenr7cZ12l01/Portfolio?node-id=0%3A1
-
-Font: Work Sans, Didact Gothic, Fjalla One
-Farben: #9e9e9e, #fff, #000, #333, #666
-Die Bilder befinden sich in der zip-Datei im Classroom!
-Dort befindet sich auch eine Bildschirmaufnahme der Website! */
-
 * {
     box-sizing: border-box;
     margin: 0;
@@ -99,7 +92,6 @@ main section p {
     letter-spacing: -0.05em;
 }
 
-
 /* section1 - orbis odd */
 main section:nth-of-type(1) {
     background: linear-gradient(rgba(0, 0, 0, 0.5),
@@ -112,13 +104,12 @@ main section a {
     margin: 4.5% 0 0 0 ;
     font-size: 1rem;
     padding: 1.1% 2.0%;
-
 }
 
 main section article {
-   position: relative;
-   margin: 0 0 0 15%;
-   padding: 8% 0 0 0;
+    position: relative;
+    margin: 0 0 0 15%;
+    padding: 8% 0 0 0;
 }
 
 main section:nth-of-type(odd) h1 {
@@ -148,7 +139,7 @@ main section:not(:last-child) p:nth-of-type(3) {
 
 main section:nth-of-type(odd) a:hover + p {
     color: #fff;  
-    opacity: 1;  
+    opacity: 1; 
 }
 
     /* section2 - rollr even */
@@ -235,7 +226,6 @@ main section:nth-of-type(5) article div a {
     line-height: 4.5rem;
     background: none;
     font-family: Work;
-    
 }
 
 main section:nth-of-type(5) article div a:hover {
@@ -244,13 +234,11 @@ main section:nth-of-type(5) article div a:hover {
     text-decoration: underline;
 }
 
-
 /* footer */
 
 footer {
     height: 120vh;
     text-align: center;
-    
 }
 
 footer a {
@@ -269,8 +257,6 @@ footer a:hover {
     text-decoration: underline;
 }
 
-/* animation rauskopiert aus https://css-tricks.com/almanac/properties/a/animation/ und https://webcode.tools/generators/css/keyframe-animation - aber ich habe keine Ahnung, was hier passiert und warum das so ist */
-
 .fa-heart {
     animation: pulse 1s infinite;
     font-size: 1rem;
@@ -279,29 +265,29 @@ footer a:hover {
 
 @keyframes pulse {
     0% {
-      animation-timing-function: ease-out;
-      transform: scale(1);
-      transform-origin: center center;
+    animation-timing-function: ease-out;
+    transform: scale(1);
+    transform-origin: center center;
 }
-  
+
     10% {
-      animation-timing-function: ease-in;
-      transform: scale(0.91);
+    animation-timing-function: ease-in;
+    transform: scale(0.91);
 }
-  
+
     17% {
-      animation-timing-function: ease-out;
-      transform: scale(0.98);
+    animation-timing-function: ease-out;
+    transform: scale(0.98);
 }
-  
+
     33% {
-      animation-timing-function: ease-in;
-      transform: scale(0.87);
+    animation-timing-function: ease-in;
+    transform: scale(0.87);
 }
-  
+
     45% {
-      animation-timing-function: ease-out;
-      transform: scale(1);
+    animation-timing-function: ease-out;
+    transform: scale(1);
 }
 }  
 
