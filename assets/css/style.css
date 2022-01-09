@@ -44,29 +44,30 @@ header {
     height: 197vh;
     width: 720px;
     margin: 1% auto;
+    
 }
 
 header p {
     font-size: 1.25rem;   
-    margin-bottom: 8.25%; 
+    margin: 5% 0 11% 0; 
     color: #000;
 }
 
 header h1 {
     font-size: 6.25rem;
-    margin-bottom: 10%;
+    margin-bottom: 14%;
     line-height: 8rem;  
     letter-spacing: -0.02em;  
     font-weight: 200;
 }
 
 header img {
-    height: 120vh;
+    width: 100%;
 }
 
 header h2 {
     font-size: 9rem;
-    margin-top: 11%;
+    margin-top: 19%;
     text-transform: uppercase;
 }
 
